@@ -1,0 +1,80 @@
+/**
+ * The frame or rather, the main structure from which
+ * additional div elements are nested.
+ **
+ * Basic normalizing
+ */
+ @import url('_theme.css');
+ 
+ html,
+ body  {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 100%;
+    font-weight: 300; }
+    
+ body  {
+    min-height: 100%; }
+    
+.wrapper  {
+    position: relative;
+    max-width: 100%;
+    min-height: 100%;
+    padding-right: 20px;
+    padding-left: 20px; }
+    
+ /**
+  * I took the main elements of a mobile responsive
+  * design from <http://www.responsivegridsystem.com/>
+  * and did a minimal amount of tweeking.
+  * Thank you to Graham Miller for what I think is a 
+  * fantastic version of a Mobile first approach!
+  */
+.row {
+    clear: both;
+    padding: 0px;
+    margin: 0px; }
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%; }
+
+.col:first-child {
+    margin-left: 0; }
+
+.group:before,
+.group:after {
+    content: "";
+    display: table; }
+
+.group:after {
+    clear: both; }
+
+.group {
+    zoom: 1; }
+
+.column4 {
+    width: 100%; }
+
+.column3 {
+    width: 74.6%; }
+
+.column2 {
+    width: 49.2%; }
+
+.column1 {
+    width: 23.8%; }
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%; }
+  .column1, 
+  .column2, 
+  .column3, 
+  .column4 { 
+      width: 100%; } }
+ 
