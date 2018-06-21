@@ -1,3 +1,4 @@
+<?php
 /**
  * This is the file that initializes the session
  * creates our global variables/paths etc.
